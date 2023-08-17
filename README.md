@@ -38,6 +38,7 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    *URL: "api/cliente/{email}/endereco" *O email cadastrado na parte 6 das Configurações*
    *Método: POST
    *Body:
+   
    ` {
         "logradouro": "Rua das Flores",
         "numero": "123",
