@@ -26,8 +26,12 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    }
    
 4. Execute o projeto:  
-   ./mvnw spring-boot:run  
+{
 
+        ./mvnw spring-boot:run  
+
+    }
+   
 6. Cadastre um email manualmente na tabela Cliente do Banco de Dados:
    INSERT INTO Cliente (id, email) VALUES (1, 'usuario@email');
 
