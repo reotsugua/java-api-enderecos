@@ -10,13 +10,18 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class LogradourosApplication {
 
-	@Autowired
-	private static TesteController controller;
+	/*@Autowired
+	private static TesteController controller;*/
 
 	public static void main(String[] args) {
 
 		SpringApplication.run(LogradourosApplication.class, args);
-		System.out.println(controller);
+		/*System.out.println(controller);*/
+	}
+
+	@Bean
+	public RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 
 

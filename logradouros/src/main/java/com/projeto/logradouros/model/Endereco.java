@@ -1,9 +1,6 @@
 package com.projeto.logradouros.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,6 +20,10 @@ public class Endereco {
     private String estado;
     private String cep;
 
+
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
     public void setCliente(Cliente cliente) {
     }
 }

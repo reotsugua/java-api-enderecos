@@ -32,7 +32,7 @@ public class EnderecoController {
         }
     }
 
-    @PostMapping("/cliente/{email}/endereco")
+    @PostMapping("/cliente/{email}/enderecos")
     public ResponseEntity<?> adicionarEnderecoAoCliente(@PathVariable String email, @RequestBody Endereco endereco) {
         try {
             Cliente cliente = clienteRepository.findByEmail(email);
