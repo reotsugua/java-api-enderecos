@@ -25,4 +25,23 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    ./mvnw spring-boot:run  
 
 6. Cadastre um email manualmente na tabela Cliente do Banco de Dados:
-   INSERT INTO Cliente (id, email) VALUES (1, 'usuario@email.com');   
+   INSERT INTO Cliente (id, email) VALUES (1, 'usuario@email.com');
+
+## Como Usar
+
+1. ### Buscar Dados de Endereço por CEP
+   URL: "api/endereco/{cep}"
+   Método: GET
+   Exemplo: "http://localhost:8080/api/endereco/80730360"
+
+2. ### Adicionar Endereço a um Cliente
+   URL: "api/cliente/{email}/endereco" >O email cadastrado na parte 6 das Configurações
+   Método: POST
+   Body:
+   ` {
+        "logradouro": "Rua das Flores",
+        "numero": "123",
+        "bairro": "Centro",
+        "localidade": "Curitiba",
+        "uf": "PR"
+      }`
