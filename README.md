@@ -48,7 +48,7 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
         "bairro": "Centro",
         "localidade": "Curitiba",
         "uf": "PR"  
-      } 
+    } 
 
 * Exemplo: "http://localhost:8080/api/cliente/usuario@email/endereco"  
 
