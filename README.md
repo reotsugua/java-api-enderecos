@@ -14,12 +14,16 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    Utilize Git Bash  
    git clone https://github.com/seu-usuario/seu-repositorio.git  
    
-3. Configure as propriedades do banco de dados no arquivo src/main/resources/application.properties.
-   spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados  
-   spring.datasource.username=root (ou seu_usuario)  
-   spring.datasource.password=     (ou sua_senha)  
-   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
-   spring.jpa.hibernate.ddl-auto=update  
+3. Configure as propriedades do banco de dados no arquivo src/main/resources/application.properties.  
+   {
+      
+        spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados  
+        spring.datasource.username=root (ou seu_usuario)  
+        spring.datasource.password=     (ou sua_senha)  
+        spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
+        spring.jpa.hibernate.ddl-auto=update  
+
+   }
    
 4. Execute o projeto:  
    ./mvnw spring-boot:run  
@@ -51,4 +55,13 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
 ### 3. Listar Endereços de um Cliente  
 * URL: "api/cliente/{email}/listarendereco"
 * Método: GET
-* Exemplo: "http://localhost:8080/api/cliente/usuario@email/enderecos"
+* Exemplo: "http://localhost:8080/api/cliente/usuario@email/enderecos"  
+
+## Executando Testes Unitários
+* Executando os Testes:  
+    Execute os testes usando uma ferramenta de build como o Maven. No terminal, navegue até o diretório raiz do seu projeto e execute o seguinte comando para executar todos os testes:  
+
+{
+
+    ./mvnw test
+}
