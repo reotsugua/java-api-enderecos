@@ -34,7 +34,7 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    Método: GET
    Exemplo: "http://localhost:8080/api/endereco/80730360"
 
-2. ### Adicionar Endereço a um Cliente
+3. ### Adicionar Endereço a um Cliente
    URL: "api/cliente/{email}/endereco" >O email cadastrado na parte 6 das Configurações
    Método: POST
    Body:
