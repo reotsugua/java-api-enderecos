@@ -7,9 +7,9 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+@Entity
 @Getter
 @Setter
-@Entity
 public class Endereco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,4 +22,7 @@ public class Endereco {
     private String cidade;
     private String estado;
     private String cep;
+
+    public void setCliente(Cliente cliente) {
+    }
 }

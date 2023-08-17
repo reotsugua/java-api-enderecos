@@ -1,11 +1,9 @@
 package com.projeto.logradouros.repository;
 
 import com.projeto.logradouros.model.Cliente;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public class ClienteRepository {
-    public Cliente findByEmail(String email) {
-    }
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
-    public void save(Cliente cliente) {
-    }
+    Cliente findByEmail(String email);
 }

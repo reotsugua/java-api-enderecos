@@ -1,5 +1,6 @@
 package com.projeto.logradouros.controller;
 
+import com.projeto.logradouros.exception.ClienteNotFoundException;
 import com.projeto.logradouros.model.Cliente;
 import com.projeto.logradouros.model.Endereco;
 import com.projeto.logradouros.repository.ClienteRepository;
