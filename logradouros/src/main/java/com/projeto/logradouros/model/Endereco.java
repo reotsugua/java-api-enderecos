@@ -16,8 +16,8 @@ public class Endereco {
     private String logradouro;
     private String numero;
     private String bairro;
-    private String cidade;
-    private String estado;
+    private String localidade;
+    private String uf;
     private String cep;
 
 
@@ -25,5 +25,7 @@ public class Endereco {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
     public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
+
 }

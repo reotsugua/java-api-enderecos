@@ -18,7 +18,7 @@ import java.util.List;
 public class ClienteController {
     @Autowired
     private ClienteService clienteService;
-    @GetMapping("/cliente/{email}/enderecos")
+    @GetMapping("/cliente/{email}/listarendereco")
     public ResponseEntity<?> listarEnderecosDoCliente(@PathVariable String email) {
         try {
             List<Endereco> enderecos = clienteService.listarEnderecosDoCliente(email);
@@ -28,7 +28,7 @@ public class ClienteController {
         }
     }
 
-    @PostMapping("/cliente/{email}/endereco")
+    @PostMapping("/cliente/{email}/addendereco")
     public ResponseEntity<?> adicionarEnderecoAoCliente(@PathVariable String email, @RequestBody Endereco endereco) {
         try {
             clienteService.adicionarEnderecoAoCliente(email, endereco);

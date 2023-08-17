@@ -18,6 +18,9 @@ public class ClienteService {
     @Autowired
     private EnderecoRepository enderecoRepository;
 
+    public ClienteService() {
+    }
+
     public void adicionarEnderecoAoCliente(String email, Endereco endereco) throws ClienteNotFoundException {
         Cliente cliente = clienteRepository.findByEmail(email);
         if (cliente == null) {

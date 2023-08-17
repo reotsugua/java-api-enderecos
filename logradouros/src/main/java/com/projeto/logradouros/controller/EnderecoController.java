@@ -17,7 +17,7 @@ import java.util.Map;
 @RequestMapping("/api")
 public class EnderecoController {
     @Autowired
-    private ViaCepService viaCepService; // Você precisará criar esse serviço
+    private ViaCepService viaCepService;
 
     @Autowired
     private ClienteRepository clienteRepository;
@@ -32,7 +32,7 @@ public class EnderecoController {
         }
     }
 
-    @PostMapping("/cliente/{email}/enderecos")
+    @PostMapping("/cliente/{email}/endereco")
     public ResponseEntity<?> adicionarEnderecoAoCliente(@PathVariable String email, @RequestBody Endereco endereco) {
         try {
             Cliente cliente = clienteRepository.findByEmail(email);
