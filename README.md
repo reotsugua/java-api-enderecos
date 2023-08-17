@@ -30,8 +30,8 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
 ## Como Usar
 
 1. ### Buscar Dados de Endereço por CEP
-   * URL: "api/endereco/{cep}"
-   * Método: GET
+   *URL: "api/endereco/{cep}"
+   *Método: GET
    Exemplo: "http://localhost:8080/api/endereco/80730360"
 
 3. ### Adicionar Endereço a um Cliente
