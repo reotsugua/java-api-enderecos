@@ -72,3 +72,25 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
 
     ./mvnw test
 }
+
+## Front End
+#### No Front End foi utilizado HTML+Bootstrap+JavaScript
+
+1. Após executar o projeto (Etapa 4 das configurações)
+{
+
+        ./mvnw spring-boot:run  
+
+    }
+
+2. E criar um email manualmente na tabela Cliente do Banco de Dados: (Etapa 6 das configurações)
+{
+
+        INSERT INTO Cliente (id, email) VALUES (1, 'usuario@email');
+   }
+
+3. Execute o arquivo "index.html" nas pasta "java-api-enderecos/front/index.html"
+4. Você verá o front end funcionando com um formulário que executará a funcionalidade desta API.
+
+
+
