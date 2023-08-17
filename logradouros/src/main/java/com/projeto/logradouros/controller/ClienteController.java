@@ -1,9 +1,7 @@
 package com.projeto.logradouros.controller;
 
 import com.projeto.logradouros.exception.ClienteNotFoundException;
-import com.projeto.logradouros.model.Cliente;
 import com.projeto.logradouros.model.Endereco;
-import com.projeto.logradouros.repository.ClienteRepository;
 import com.projeto.logradouros.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +16,7 @@ import java.util.List;
 public class ClienteController {
     @Autowired
     private ClienteService clienteService;
+
     @GetMapping("/cliente/{email}/listarendereco")
     public ResponseEntity<?> listarEnderecosDoCliente(@PathVariable String email) {
         try {
@@ -27,15 +26,4 @@ public class ClienteController {
             return ResponseEntity.notFound().build();
         }
     }
-
-    @PostMapping("/cliente/{email}/addendereco")
-    public ResponseEntity<?> adicionarEnderecoAoCliente(@PathVariable String email, @RequestBody Endereco endereco) {
-        try {
-            clienteService.adicionarEnderecoAoCliente(email, endereco);
-            return ResponseEntity.ok("Endereço adicionado com sucesso.");
-        } catch (ClienteNotFoundException e) {
-            return ResponseEntity.notFound().build();
-        }
-    }
 }
-
