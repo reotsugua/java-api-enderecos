@@ -15,11 +15,11 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
    git clone https://github.com/seu-usuario/seu-repositorio.git
    
 2. Configure as propriedades do banco de dados no arquivo src/main/resources/application.properties.
-   spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados
-   spring.datasource.username=root (ou seu_usuario)
-   spring.datasource.password=     (ou sua_senha)
-   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-   spring.jpa.hibernate.ddl-auto=update
+   spring.datasource.url=jdbc:mysql://localhost:3306/seu_banco_de_dados  
+   spring.datasource.username=root (ou seu_usuario)  
+   spring.datasource.password=     (ou sua_senha)  
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver  
+   spring.jpa.hibernate.ddl-auto=update  
    
 3. Execute o projeto:
    ./mvnw spring-boot:run
