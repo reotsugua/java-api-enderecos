@@ -91,6 +91,3 @@ Este projeto é uma API para gerenciamento de endereços de clientes em um siste
 
 3. Execute o arquivo "index.html" nas pasta "java-api-enderecos/front/index.html"
 4. Você verá o front end funcionando com um formulário que executará a funcionalidade desta API.
-
-
-
